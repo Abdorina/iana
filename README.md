@@ -10,19 +10,18 @@
 4. `POST /integrations` - Добавить новую интеграцию
 5. `DELETE /integrations/{integration_id}` - Удалить интеграцию
 
-## Требования
-
-- Python 3.7+
-- FastAPI
-- Uvicorn
 
 ## Установка и запуск
 
 1. Клонируйте репозиторий:
-```bash
+
 git clone https://github.com/yourusername/health-api.git
 cd health-api
 
 
-
+## установка зависимостей
 pip install -r requirements.txt
+## запустить сервер командой
+uvicorn app.main:app --reload
+получите ссылку в терминале по которой в браузере 
+можно будет запустить Swagger UI: http://127.0.0.1:8000/docs
